@@ -7,21 +7,42 @@ function cursorAnimationEffect() {
     //these can be used but for better animation we can use library in my case i am using gsap library
     gsap.to(cursor, {
       x: event.x,
-      y: event.y,
+      y: event.y
     });
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+      gsap.to(cursor, {
+        scale: 0,
+        opacity: 0
+      });
+    }, 100);
   });
   // This eventlistner monitors mouse movement simultaneously. In the arrow function, the parameter 'event' captures mouse movement data. While 'event' can be replaced with any valid variable name (e.g., "sjkadbkjs sddhfjsd d sddjbsdkg jsd g sdghs"), it's advisable to use meaningful parameter names. Logging the event provides values like mouse movements along the x and y axis, enabling precise tracking of the cursor's position.
   page1Content.addEventListener("mouseenter", function () {
     gsap.to(cursor, {
       scale: 1,
-      opacity: 1,
+      opacity: 1
     });
   });
   page1Content.addEventListener("mouseleave", function () {
     gsap.to(cursor, {
       scale: 0,
-      opacity: 1,
+      opacity: 0
     });
   });
 }
 cursorAnimationEffect();
+function page2Animation(){
+  gsap.from (".elem h1",{
+    y:120,
+    stagger:0.2,
+    duration:1,
+    scrollTrigger:{
+      trigger:'page2',
+      scroller:"body",
+      start:"top 46%",
+      markers:true,
+      scrub:2
+    }
+  })
+}

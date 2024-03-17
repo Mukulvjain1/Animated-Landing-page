@@ -91,3 +91,19 @@ h3,h4{
     font-size: 1vw;
   }
 }
+@media (max-width:600px) {
+  nav h4,nav h3{
+    font-size: 5vw;
+    padding: 10px;
+  }
+  nav h4{
+    border: 2px solid;
+    padding: 10px 15px;
+    border-radius:15px ;
+    width: 25%;
+    text-align: center;
+  }
+  #cursor {
+    display: none;
+  }
+}
