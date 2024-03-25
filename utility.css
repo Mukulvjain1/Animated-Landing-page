@@ -1,0 +1,32 @@
+@font-face {
+    font-family: nb;
+    src: url('./Fonts/NBInternationalProBoo.woff2');
+}
+@font-face {
+  font-family: rejoice;
+  src: url('./Fonts/Rejouice-Headline.woff2');
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'nb';
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.flex-center{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-col{
+    flex-direction: column;
+}
+.flex-btw{
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
