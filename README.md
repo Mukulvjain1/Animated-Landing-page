@@ -1,7 +1,7 @@
 # Animated Landing Page 
 
 This project is an animated landing page designed with HTML, CSS, and JavaScript. It features dynamic cursor animations and a video background.
-What to check the progress  click here for <a href="https://mukulvjain1.github.io/Animated-Landing-page-/" target="_blank">Live Preview</a>
+What to check the progress  click here for <a href="https://animated-website-rejoice.netlify.app" target="_blank">Live Preview</a>
 
 ## Features
 
@@ -21,8 +21,6 @@ To use this landing page, follow these steps:
 
 1. Clone this repository.
 2. Open the `index.html` file in your web browser.
-
-## Credits
 
 - Fonts:
   - NB International Pro: [Download Here](./Fonts/NBInternationalProBoo.woff2)
